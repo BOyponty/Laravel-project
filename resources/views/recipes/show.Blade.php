@@ -4,6 +4,7 @@
  @foreach ($recipe ['ingredients'] as $ingredient )
 <p class="text-zinc-600 ">{{ $ingredient }}</p>
 @endforeach;
+
 </x-layout>
 
 
