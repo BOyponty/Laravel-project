@@ -15,7 +15,7 @@
                 <ul class="flex space-x-6">
                     <x-link-item href="/" :active="Route::currentRouteName() === 'homepage' ? true : false" class="underline">Homepage</x-link-item>
                     <x-link-item href="/Project" :active="Route::currentRouteName() === 'project' ? true : false">Project</x-link-item>
-                    <x-link-item href="/recipes" :active="Route::currentRouteName() === 'recipes.index' ? true : false">Recipes</x-link-item>
+                    <x-link-item href="/recipes" :active="fumatch('recipes.*', Route::currentRouteName())? true : false">Recipes</x-link-item>
                 </ul>
             </div>
         </nav>
