@@ -1,6 +1,6 @@
 <?php
 use App\Models\Recipe;
-use Illuminate\Support\Arr;
+use Illuminate\Support\Arr ;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'homepage')->name('homepage');
@@ -20,7 +20,7 @@ return view('recipes.index', compact('recipes'));
 
 Route::get('/recipes/{id}', function (int $id)  {
 
-$model=new Recipes();
+$model=new Recipe();
 $recipe=$model->retrieve($id);
 
 return view('recipes.show', compact('recipe'));
