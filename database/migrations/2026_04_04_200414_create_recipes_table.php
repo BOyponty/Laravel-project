@@ -29,9 +29,8 @@ foreach($recipes as $recipe) {
             DB::table('recipes')->insert([
                 'title' => $recipe['title'],
                 'ingrediants' => json_encode($recipe['ingredients']),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]); 
+               
+            ]);
             // Insert each recipe into the database
         }
     }
